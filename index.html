@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mayur V - Software Developer Portfolio" />
+  <title>Mayur V | Software Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#hero">Mayur V</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">Light mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Software Developer</p>
+        <h1>Hi, I'm <span class="name-accent">Mayur V</span></h1>
+        <h2><span id="typingText"></span><span class="cursor">|</span></h2>
+        <p class="hero-intro">
+          I build reliable software systems with a focus on performance, clean architecture,
+          and practical product delivery.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow">About Me</p>
+        <h3>Developer with a systems mindset</h3>
+      </div>
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h4>Profile Details</h4>
+          <p><strong>Name:</strong> Mayur V</p>
+          <p><strong>Role:</strong> Software Developer</p>
+          <p><strong>Core Stack:</strong> Python, C++, Java, SQL</p>
+          <p><strong>Focus:</strong> Backend systems and scalable application design</p>
+        </article>
+        <article class="about-card reveal">
+          <p>
+            I am a software developer focused on backend engineering, data-driven systems, and
+            maintainable application design. I enjoy solving real business problems using strong
+            fundamentals in algorithms, databases, and software architecture.
+          </p>
+          <p>
+            I work across Python, C++, Java, and SQL, and I am comfortable collaborating from idea
+            to production-ready implementation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h3>Core technologies and proficiency</h3>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><h4>Python</h4><div class="bar"><span style="width: 90%"></span></div></article>
+        <article class="skill-card reveal"><h4>C++</h4><div class="bar"><span style="width: 85%"></span></div></article>
+        <article class="skill-card reveal"><h4>Java</h4><div class="bar"><span style="width: 82%"></span></div></article>
+        <article class="skill-card reveal"><h4>SQL</h4><div class="bar"><span style="width: 88%"></span></div></article>
+        <article class="skill-card reveal"><h4>Git & GitHub</h4><div class="bar"><span style="width: 84%"></span></div></article>
+        <article class="skill-card reveal"><h4>REST APIs</h4><div class="bar"><span style="width: 80%"></span></div></article>
+      </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-head reveal">
+        <p class="eyebrow">Projects</p>
+        <h3>Selected work</h3>
+      </div>
+
+      <div class="filters reveal" role="group" aria-label="Project filter buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="backend">
+          <div class="project-body">
+            <h4>High-Throughput API Gateway</h4>
+            <p>Scalable API routing service with authentication, rate limiting, and caching.</p>
+            <p class="stack">Python, FastAPI, Redis, Docker</p>
+            <div class="project-links"><a href="#">GitHub</a><a href="#">Live Demo</a></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-body">
+            <h4>Developer Portfolio Dashboard</h4>
+            <p>Interactive dashboard with filtering, analytics cards, and responsive UI components.</p>
+            <p class="stack">HTML, CSS, JavaScript</p>
+            <div class="project-links"><a href="#">GitHub</a><a href="#">Live Demo</a></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="data">
+          <div class="project-body">
+            <h4>SQL Analytics Engine</h4>
+            <p>Query optimization and reporting pipeline for business KPI tracking.</p>
+            <p class="stack">SQL, Python, PostgreSQL</p>
+            <div class="project-links"><a href="#">GitHub</a><a href="#">Live Demo</a></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="backend web">
+          <div class="project-body">
+            <h4>Microservice Task Platform</h4>
+            <p>Task management platform built with service-based architecture and role control.</p>
+            <p class="stack">Java, Spring Boot, SQL</p>
+            <div class="project-links"><a href="#">GitHub</a><a href="#">Live Demo</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="experience">
+      <div class="section-head reveal">
+        <p class="eyebrow">Experience & Achievements</p>
+        <h3>What I have built and delivered</h3>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <h4>Software Development Projects</h4>
+          <p>Built multiple academic and personal projects focused on backend logic, database design, and performance optimization.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <h4>Problem Solving</h4>
+          <p>Regularly practice algorithmic problems and apply structured debugging techniques to reduce development time.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <h4>Collaboration</h4>
+          <p>Comfortable working in teams using Git workflows, code reviews, and clear technical communication.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">Contact</p>
+        <h3>Let’s build something useful</h3>
+      </div>
+      <div class="contact-grid">
+        <article class="contact-panel reveal">
+          <p><strong>Email:</strong> <a href="mailto:mayurv337@gmail.com">mayurv337@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mayur-v-25b736330/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mayur-v-25b736330</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/your-username</a></p>
+        </article>
+
+        <form class="contact-form reveal" action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Mayur V. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/mayur-v-25b736330/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">Top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
